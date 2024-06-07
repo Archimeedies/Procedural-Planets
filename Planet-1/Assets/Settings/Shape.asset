@@ -13,11 +13,67 @@ MonoBehaviour:
   m_Name: Shape
   m_EditorClassIdentifier: 
   planetRadius: 2.72
-  noiseSettings:
-    strength: 0.16
-    numLayers: 5
-    baseRoughness: 0.86
-    rougness: 1.83
-    persistence: 0.54
-    centre: {x: 2.86, y: 1.84, z: 2.48}
-    minValue: 1.2
+  noiseLayers:
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.18
+        numLayers: 5
+        baseRoughness: 1
+        rougness: 2.09
+        persistence: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0.99
+      rigidNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        rougness: 2
+        persistence: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultiplier: 0.8
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.05
+        numLayers: 4
+        baseRoughness: 1
+        rougness: 1.35
+        persistence: 2.57
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 13.6
+      rigidNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        rougness: 2
+        persistence: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultiplier: 0.8
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        rougness: 2
+        persistence: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+      rigidNoiseSettings:
+        strength: 1.4
+        numLayers: 1
+        baseRoughness: 2.68
+        rougness: 2.53
+        persistence: -0.29
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0.7
+        weightMultiplier: -3.2
